@@ -1,0 +1,7 @@
+{
+  "description": "",
+  "dependencies": {
+    "@types/jquery": "^3.5.29",
+    "swiper": "^11.1.11"
+  }
+}
