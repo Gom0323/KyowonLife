@@ -162,7 +162,7 @@
 
 #header .main_slider {
   width: 1200px;
-  height: 735px;
+  height: 641px;
   margin: 0 auto;
 
 }
@@ -376,7 +376,7 @@
 }
 #header .main_slider .slide07 .img_wrap {
   position: relative;
-  right: 310px;
+  right: -260px;
   top: 40px;
   max-width: 910px;
   height: 550px;
@@ -425,6 +425,57 @@
   right: 50px;
   width: 60px;
   height: 60px;
+}
+
+
+
+#header .btn_wrap .swiper-pagination {
+  position: absolute;
+  bottom: -620px;
+  left: 1320px;
+  background: #00000066;
+  border-radius: 25px;
+  width: 132px;
+  line-height: 45px;
+}
+#header .swiper-pagination span {
+  font-size: 2.5rem;
+  color: #fff;
+}
+.main_slider .btn_wrap .toggle_btn {
+  position: absolute;
+  bottom: -620px;
+  left: 1242px;
+  width: 48px;
+  height: 48px;
+  background: #00000066;
+  border: none;
+  border-radius: 50px;
+  font-size: 1.5rem;
+  color: #fff;
+  font-weight: 500;
+}
+.main_slider .btn_wrap .ri-pause-fill {
+  display: block;
+  position: absolute;
+  top: 14px;
+  left: 14px;
+  width: 20px;
+  height: 20px;
+  border-color: #fff;
+  border-style: double;
+  border-width: 0 0 0 20px;
+}
+.main_slider .btn_wrap .ri-play-fill {
+  display: block;
+  position: absolute;
+  top: 14px;
+  left: 18px;
+  width: 10px;
+  height: 10px;
+  border-color: transparent transparent transparent white;
+  border-style: solid solid solid solid;
+  border-width: 10px 0 10px 16px;
 }
 
 #container {
