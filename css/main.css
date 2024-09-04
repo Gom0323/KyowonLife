@@ -19,7 +19,7 @@
   top: 0;
   background: none;
   width: 100%;
-  height: 94px;
+  height: 735px;
   z-index: 9999;
 }
 #header::before {
@@ -403,8 +403,6 @@
   color: #fff;
 }
 
-
-
 #header .swiper-button-prev:after {
   display: none;
 }
@@ -427,12 +425,10 @@
   height: 60px;
 }
 
-
-
 #header .btn_wrap .swiper-pagination {
   position: absolute;
-  bottom: -620px;
-  left: 1320px;
+  bottom: -10px;
+  left: 1000px;
   background: #00000066;
   border-radius: 25px;
   width: 132px;
@@ -442,10 +438,14 @@
   font-size: 2.5rem;
   color: #fff;
 }
+.main_slider .btn_wrap {
+  height: 48px;
+  position: relative;
+}
 .main_slider .btn_wrap .toggle_btn {
   position: absolute;
-  bottom: -620px;
-  left: 1242px;
+  bottom: -10px;
+  left: 900px;
   width: 48px;
   height: 48px;
   background: #00000066;
@@ -478,10 +478,178 @@
   border-width: 10px 0 10px 16px;
 }
 
+
+
+
 #container {
   height: 5000px;
 }
+#container .main_quick_wrap .inner {
+  height: 150px;
+  display: flex;
+}
 
+.main_quick_wrap .main_banner {
+  display: flex;
+  width: 350px;
+  height: 150px;
+  padding: 35px 20px;
+  background-color: var(--point-color1);
+}
+
+.main_quick_wrap .main_banner img {
+  width: 80px;
+  height: 80px;
+}
+.main_quick_wrap .main_banner span {
+  color: #fff;
+  font-size: 1.6rem;
+  padding-left: 15px;
+}
+
+.main_quick_wrap .quick_wrap {
+  display: inline-block;
+  display: flex;
+  max-width: 1200px;
+  vertical-align: top;
+}
+.main_quick_wrap .quick_wrap li {
+  width: 200px;
+  padding-top: 30px;
+}
+.main_quick_wrap .quick_wrap a {
+  display: flex;
+  height: 120px;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+}
+.main_quick_wrap .quick_wrap a::after {
+  content: '';
+  position: absolute;
+  height: 100px;
+  top: 50%;
+  left: 0;
+  margin-top: -50px;
+  width: 1px;
+  background: #f0f0f0;
+}
+.main_quick_wrap .quick_wrap a:hover {
+  color: var(--point-color1);
+}
+.main_quick_wrap .quick_wrap a:hover img {
+  transform:  scale(1.1);
+}
+.main_quick_wrap .quick_wrap img {
+  transition: all 0.1s;
+  width: 40px;
+  height: 40px;
+}
+.main_quick_wrap .quick_wrap span {
+  padding-top: 15px;
+  text-align: center;
+}
+
+
+#container .main_benefit {
+  background: #f0f0f0;
+
+}
+.main_benefit .inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 100px 0;
+  height: 1066px;
+}
+.main_benefit h1 {
+  font-size: 2.9rem;
+  color: #222;
+  font-weight: 500;
+  text-align: center;
+}
+
+.main_benefit .main_benefit_wrap {
+  position: relative;
+  margin-top: 50px;
+  display: table;
+  width: 100%;
+  table-layout: fixed;
+}
+.main_benefit_wrap .inner_half {
+  width: 48%;
+  display: table-cell;
+  vertical-align: top;
+}
+.main_benefit_wrap .inner_half a {
+  display: block;
+
+}
+.main_benefit .main_webzine_wrap {
+  position: relative;
+}
+.main_benefit_wrap .inner_half .main_webzine_wrap li {
+  position: relative;
+  display: inline-block;
+  width: calc(50% - 15px);
+  height: 297px;
+  max-height: 288px;
+  overflow: hidden;
+}
+.main_benefit_wrap .inner_half .main_webzine_wrap .main_webzine span {
+  background-color: #00000080;
+  color: #fff;
+  font-size: 1.5rem;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  padding: 12px 26px 14px 20px;
+  width: 100%;
+}
+.inner_half .main_webzine_wrap .main_webzine {
+  position: relative;
+  display: block;
+  overflow: hidden;
+}
+.main_widzet {
+  display: flex;
+  margin-top: 15px;
+}
+
+.main_widzet .main_widzet_event {
+  width: 585px;
+}
+
+.main_widzet .main_widzet_quick {
+  width: 576px;
+  background: #fff;
+  border: 1px solid #d7d7d7;
+  box-sizing: border-box;
+  margin-left: 16px;
+}
+.main_widzet .main_widzet_quick ul {
+  display: flex;
+  height: 100%;
+}
+.main_widzet .main_widzet_quick li {
+  display: inline-flex;
+  width: calc(33.3% - 1px);
+  justify-content: center;
+  align-items: center;
+  border-right: 1px solid #d7d7d7;
+  text-align: center;
+  box-sizing: border-box;
+}
+.main_widzet .main_widzet_quick img {
+  width: 50px;
+}
+.main_widzet .main_widzet_quick span {
+  font-size: 1.5rem;
+}
+.main_widzet .main_widzet_quick a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 @media (max-width: 1200px) {
   #header .gnb_wrap .gnb > li {
     width: 100px;
