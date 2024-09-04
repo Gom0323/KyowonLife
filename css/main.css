@@ -650,6 +650,23 @@
   flex-direction: column;
   align-items: center;
 }
+
+
+
+
+
+
+.main_service {
+  width: 100%;
+  height: 1100px;
+  background: url(../images/mainslide/bg_main_service.png) no-repeat;
+  padding: 100px 0;
+}
+.main_service .inner {
+  
+}
+
+
 @media (max-width: 1200px) {
   #header .gnb_wrap .gnb > li {
     width: 100px;
