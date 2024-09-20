@@ -7,7 +7,7 @@ $(function () {
       $("#header").removeClass("on");
     });
 
-  const swiper = new Swiper(".swiper", {
+  const swiper = new Swiper(".main_slider .swiper", {
     autoplay: {
       disableOnInteraction: false,
       delay: 3000,
