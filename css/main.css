@@ -657,6 +657,7 @@
 
 .main_service .inner {
   height: 925px;
+  position: relative;
 }
 .main_service .inner h1 {
   color: #fff;
@@ -725,6 +726,20 @@
   font-size: 1.4rem;
   color: #222;
   font-weight: 600;
+}
+.main_service .all_btn {
+  position: absolute;
+  bottom: 126px;
+  left: 50%;
+  transform: translate(-50%);
+  padding: 5px 50px;
+  border: 1px solid #fff;
+  color: #fff;
+  line-height: 47px;
+}
+.main_service .all_btn:hover {
+  background-color: #fff;
+  color: #000;
 }
 
 @media (max-width: 1200px) {
