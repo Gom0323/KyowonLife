@@ -675,6 +675,9 @@
   background: url(../images/mainslide/bg_main_service.png) no-repeat;
   padding: 100px 0;
 }
+.main_service_content img {
+  width: 394px;
+}
 .main_service .main_service_tab {
   margin: 50px auto;
   display: flex;
