@@ -39,8 +39,8 @@ $(function () {
       },
     },
     navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
+      nextEl: ".main_slider .swiper-button-next",
+      prevEl: ".main_slider .swiper-button-prev",
     },
     on: {
       slideChange: function () {
@@ -78,22 +78,22 @@ $(function () {
   }
 
   const serviceSwiper = new Swiper('.main_service .swiper', {
-    // Default parameters
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+    loop: true,
     slidesPerView: 3,
     spaceBetween: 10,
-    // Responsive breakpoints
     breakpoints: {
-      // when window width is >= 320px
       320: {
         slidesPerView: 2,
         spaceBetween: 10
       },
-      // when window width is >= 480px
       480: {
         slidesPerView: 3,
         spaceBetween: 10
       },
-      // when window width is >= 640px
       640: {
         slidesPerView: 3,
         spaceBetween: 10
@@ -102,24 +102,28 @@ $(function () {
   })
 
   $(document).ready(function () {
+    function toggleTabContent(tabClass, contentClass) {
+      $(".main_service_tab li").removeClass("active");
+      $(".main_service_content").hide();
+  
+      $(tabClass).addClass("active");
+      $(contentClass).show();
+    }
+  
     $(".main_service_tab li a").on("click", function (e) {
       e.preventDefault();
   
-      $(".main_service_tab li").removeClass("active");
+      const selectedTab = $(this).parent();
   
-      $(this).parent().addClass("active");
-  
-      $(".main_service_content").hide();
-  
-      if ($(this).parent().hasClass("tab1")) {
-        $(".cont1").show();
-      } else if ($(this).parent().hasClass("tab2")) {
-        $(".cont2").show();
+      if (selectedTab.hasClass("tab1")) {
+        toggleTabContent(".tab1", ".cont1");
+      } else if (selectedTab.hasClass("tab2")) {
+        toggleTabContent(".tab2", ".cont2");
       }
     });
   
-    $(".main_service_tab li.tab1").addClass("active");
-    $(".main_service_content.cont1").show();
+    // 초기 상태: 첫 번째 탭과 콘텐츠 활성화
+    toggleTabContent(".tab1", ".cont1");
   });
   
   
